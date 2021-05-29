@@ -128,7 +128,7 @@ body{
 
 .portada .portada-palabras{
     color:rgba(80, 79, 79, 0.6);
-    font-size: 1.5em;
+    font-size: 2.5vh;
     letter-spacing: 0.5em;
     position: absolute;
     bottom:15%;
@@ -489,7 +489,7 @@ body{
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.16);
     background-color:#201F1F;
     float: left;
-    margin: 5%;
+    margin:4%;
     border-radius: 0;
     border-bottom: 3px solid #AC6200;
     transition: transform .50s;
@@ -500,6 +500,7 @@ body{
 }
 
 .carousel-item .card img{
+    width: 100%;
     border-radius: 0;
 }
 .carousel-item .card .logos-works{
@@ -524,6 +525,13 @@ body{
     width: 100%;
     color:white;
     font-size: 100%;
+}
+
+.nuestros-trabajos{
+    float:left;
+     width:30%;
+     color: #D9D2D2;
+      font-size: 150%;
 }
 
 .borde-estilo-end{
@@ -561,7 +569,7 @@ body{
     margin: 5%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);;
     overflow: hidden;
-    width: 30%;
+     width: 30%; 
     height: 15vh;   
     border-radius: 10px;
     transition: transform .50s;
@@ -670,5 +678,410 @@ body{
     width: 20%;
     height: 40vh;
 }
+/* -------------------------vista mobile vertical--------------------- */
+
+@media (max-width:450px)  {
+    .portada #portada-img{
+        display: none;
+    }
+
+    .portada #portada-palabras-img{
+        width: 65%;
+        bottom: 30%;
+        left: 19.7%;
+    }
+
+    /* ----navbar------ */
+    #logo-nav {
+        width: 100px;
+    }
+    
+    #nav-bar{
+        background-color: rgba(251,147,0, 0.7);
+        z-index: 11;
+        position: absolute;
+        top: 1;
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .navbar-toggler{
+        background-image: url('images/TOGGLE.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .items-nav-bar .navbar-nav{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .items-nav-bar .navbar-nav .nav-link,.items-nav-bar .navbar-nav .white{
+        color:#504F4F ;
+        margin-left: 2%;
+
+    }
+    
+    .items-nav-bar .navbar-nav #separate-item{
+        display: none;
+        width: 0%;
+    }
 
 
+    /* -----servicios----- */
+   
+    
+    .servicios-bar{
+        margin-top: 4%;
+    }
+    
+    .servicios-bar .nav-item .nav-link img{
+        width: 30px;
+    }
+    
+    .servicios-bar .nav-item{
+        margin-right: 0%;
+    }
+    
+    .servicios-bar .nav-item .nav-link{
+        color: #707070;
+        font-weight:lighter;
+    }
+
+    .service-name{
+        font-size: 39%;
+    } 
+                    /*------- BOX OF SERVICE------- */
+    .box-service ,.box-service-t {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-image: url("images/color-solid.png");
+        background-repeat:repeat;
+        background-size:auto;
+        background-position:auto;
+        overflow: hidden;
+        margin-bottom: 5%;
+        box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(255,255,255),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+              /* font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+              font-family: 'Aqua Grotesque', "century gothic"; 
+    }
+
+
+    .box-service-r{
+        background-image: url("images/color-solid-r.png");
+        background-repeat:repeat;
+        background-size: auto;
+        background-position: auto;
+        overflow: hidden;
+        margin-bottom: 5%;
+        box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(255,255,255),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+              /* font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+              font-family: 'Aqua Grotesque', "century gothic"; 
+    }
+
+    .box-img-photo,
+    .box-img-brand {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        width: 90%;
+        height: 35vh;
+        box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    
+    }
+
+    .box-img-design{
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        top: 50%;
+        width: 90%;
+        height: 35vh;
+        box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .box-img-ws,
+    .box-img-publi
+     {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 90%;
+        height: 35vh;
+        box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    
+    }
+
+    .box-img-photo img,
+    .box-img-brand img,
+    .box-img-design img,
+    .box-img-ws img,
+    .box-img-publi iframe
+    {
+         width: 100%;
+        height: 100%; 
+    }
+    
+    .box-service .box-text-photo,
+    .box-service .box-text-brand,
+    .box-service-r .box-text-design,
+    .box-service-r.box-text-ws,
+    .box-service-t .box-text-publi
+     {
+        float: right;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    
+    .box-service .box-text-photo .box-service-description,
+    .box-service .box-text-brand .box-service-description,
+    .box-service-r .box-text-design .box-service-description,
+    .box-service-r .box-text-ws .box-service-description,
+    .box-service-t .box-text-publi .box-service-description
+    {
+        font-size: 100%;
+        color: white;
+    }
+
+
+    .box-service-r .box-text-ws{
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+    }
+  
+    .box-img-publi iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    /* proyectos */
+
+
+  
+
+    .ex-proyects .panel-muestra{
+        padding-top: 10%;
+        overflow: hidden;
+    }
+    
+    .ex-proyects .panel-muestra .muestra-img{
+        width: 100%;   
+        margin-bottom: 10%;
+    }
+    
+    .ex-proyects .panel-muestra .muestra-img img{
+        height: 100%;   
+        width: 100%;
+    }
+    
+    .ex-proyects .panel-muestra .muestra-datos{
+        position: relative;
+        padding-left: 0%;
+        text-align: center;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    
+    .ex-proyects .panel-muestra .muestra-datos .trabajos{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        color:white;
+        font-size: 2vh;
+    }
+    
+    .ex-proyects .panel-muestra .muestra-datos .trabajos .logos-works img{
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 2%;
+        width: 40px;
+        font-size: 80%;
+    }
+    
+    .container-other-proyects{
+        margin-top: 6%;
+        margin-bottom: 3%;
+        overflow: hidden;
+    }
+    
+    #carouselExampleIndicators{
+        padding-top: 5vh;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .next-works{
+        height: 5vh;
+        position: absolute;
+        top: -39px;
+        right: 0%;
+    }
+    
+    .prev-works{
+        height: 5vh;
+        position: absolute;
+        top: -39px;
+        left: 0%;
+    }
+    
+    .carousel-item {
+        padding-left: 5%;
+        padding-right: 5%;
+        overflow: hidden;
+    }
+    
+    .carousel-item .card{
+        display: block;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.16);
+        background-color:#201F1F;
+        float: left;
+        margin-top: 15%;
+        border-radius: 0;
+        border-bottom: 3px solid #AC6200;
+        transition: transform .50s;
+    }
+    
+    .carousel-item .card:hover{
+        transform:scale(1.2) ;
+    }
+    
+    .carousel-item .card img{
+        border-radius: 0;
+    }
+    .carousel-item .card .logos-works{
+        position: absolute;
+        top: -15%;
+        padding: 2%;
+    }
+    
+    .carousel-item .card .logos-works img{
+        width:30px;
+    }
+    
+    .card-title{
+        text-align: center;
+        width: 100%;
+        color:#AC6200;
+        font-size: 120%;
+    }
+    
+    .card-sub{
+        text-align: center;
+        width: 100%;
+        color:white;
+        font-size: 100%;
+    }
+    
+    .nuestros-trabajos{
+        text-align: center;
+        float:left;
+         width:100%;
+         color: #D9D2D2; font-size: 150%;
+    }
+    
+    .container-other-proyects .border-trabajos{
+        display: none;
+        /* float: left;
+        margin-top: 10px;
+        width: 20%;
+        height: 2vh;
+        background-image: url("images/motivo-naranja.png");
+        background-repeat: repeat;
+        background-position: top;
+        background-size: contain; */
+    }
+    
+
+
+    /* ------------member------ */
+    .card-member{
+         width: 100%; 
+        
+    }
+
+    /* .card-member .dates-member{
+        margin-top: 5%;
+        width: 50%;
+        float: left;
+    } */
+
+    .card-member .dates-member .name-member, .card-member .dates-member .ocupation-member{
+        width: 100%;
+    }
+    
+    .card-member .dates-member .name-member{
+        font-size: 80%;
+    }
+    .card-member .dates-member .ocupation-member{
+        font-size: 60%;
+    }
+
+    
+
+.contact{
+    overflow: hidden;
+    position: relative;
+    background-color:#201F1F;
+    width: 100%;
+    height: 150vh;
+}
+
+.contact .form-contact, .contact .dates-contact{
+    padding-top: 15%;
+     float: left; 
+    height: 100%;
+}
+
+.contact .form-contact{
+     width: 100%; 
+}
+.form-contact-title{
+    width: 100%;
+    font-size: 120%;
+    color: #AC6200;
+}
+
+.dates-contact{
+     width: 100%; 
+    text-align: center;
+}
+
+#contact-dato{
+    font-size:100% ;
+}
+
+#contact-dato a{
+    color: white;
+    text-decoration: none;
+}
+#contact-title-dato{
+    
+    padding-top: 5% ;
+    color: #9C9C9C;
+    font-size: 120%;
+}
+
+.hermod-logo-contact{
+    padding-left: 4%;
+    float: left;
+    width: 20%;
+    height: 40vh;
+}
+   
+}
