@@ -1,0 +1,674 @@
+/* 
+---------------------------------------------
+----------TRANSICIONES----------------------
+--------------------------------------------
+*/
+
+
+.transicion-arriba{
+    animation: ups 1.7s 1;
+}
+
+@keyframes ups {
+    0%{margin-top: 120%;}
+}
+.transicion-arriba2{
+    animation: ups2 1.7s 1;
+}
+
+@keyframes ups2 {
+    0%{margin-top: -120%;}
+}
+
+.transicion-izquierda{
+    animation: lefts 1.7s 1;
+}
+
+@keyframes lefts {
+    0%{margin-left: -120%;}
+}
+
+.transicion-derecha{
+    animation: derecha-mov 1.7s 1;
+}
+
+@keyframes derecha-mov {
+    0%{margin-right: -120%;}
+}
+
+.transicion-abajo{
+    animation: downs 1.7s 1;
+}
+
+@keyframes downs {
+    0%{margin-bottom: -120%;}
+}
+
+@font-face {
+    font-family: 'Aqua Grotesque';
+    font-style: normal;
+    font-weight: normal;
+    src: url('aqua.ttf')format("TrueType");     
+    }
+
+body{
+    font-family: 'Aqua Grotesque', "century gothic"; 
+    
+    
+}
+
+
+/* -------------------------------------------------------NAV-BAR------------------------------------------------------ */
+#logo-nav {
+    width: 100px;
+}
+
+#nav-bar{
+    
+    z-index: 11;
+    position: absolute;
+    top: 1;
+    width: 100%;
+    font-size: 130%;
+}
+
+.items-nav-bar .navbar-nav{
+    width: 55%;
+}
+
+.items-nav-bar .navbar-nav .nav-link{
+    color:#504F4F ;
+    margin-left: 2%;
+}
+
+.items-nav-bar .navbar-nav #separate-item{
+    width: 8%;
+}
+
+.items-nav-bar .navbar-nav .white{
+    color: white;
+}
+/* --------------------------------------------------PORTADA--------------------------------------------------------------- */
+.contenedor-portada{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.portada{
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.portada #portada-img{
+    height: 85vh;
+    width: 32%;
+    position: absolute;
+    right: 1px;
+}
+
+.portada #portada-img {
+    height: 85vh;
+}
+ 
+.portada #portada-palabras-img{
+    transition: transform .70s;
+    position: absolute;
+    width: 65%;
+    bottom: 25%;
+    left: 19.7%;
+}
+
+.portada #portada-palabras-img:hover{
+    transform:perspective(10px) scale(1.2) ;
+    }
+
+.portada .portada-palabras{
+    color:rgba(80, 79, 79, 0.6);
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    position: absolute;
+    bottom:15%;
+    left: 19.7%;
+}
+/* ---------------------------------------------------------------SERVICIOS------------------------------------------------------------ */
+.servicios-bar{
+    margin-top: 4%;
+}
+
+.servicios-bar .nav-item .nav-link img{
+    width: 60px;
+}
+
+.servicios-bar .nav-item{
+    margin-right: 8%;
+}
+
+.servicios-bar .nav-item .nav-link{
+    color: #707070;
+    font-weight:lighter;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #fb6d00;
+    color: white;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.0),
+          0 0  0 2px #fb6d05,
+          0.3em 0.3em 1em rgba(0,0,0,0.5);
+} 
+
+
+                 /*------- BOX OF SERVICE------- */
+/* fotografia */
+.box-service {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/color-solid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    margin-bottom: 5%;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+          /* font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+          font-family: 'Aqua Grotesque', "century gothic"; 
+}
+.box-img-photo{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    width: 20%;
+    height: 50vh;
+    box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.box-img-photo img{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.box-service .box-text-photo {
+    float: right;
+    margin-top: 30%;
+    margin-right: 10%;
+}
+.box-service .box-text-photo .box-service-title{
+    color:#fb6d00;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.box-service .box-text-photo .box-service-description{
+    font-size: 100%;
+}
+
+
+/* brandig */
+.box-img-brand{
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    width: 50%;
+    height: 25vh;
+    box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.box-img-brand img{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.box-service .box-text-brand{
+    float: right;
+    margin-top: 30%;
+    margin-right: 10%;
+}
+.box-service .box-text-brand .box-service-title{
+    color: #fb6d00;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.box-service .box-text-brand .box-service-description{
+    font-size: 100%;
+}
+
+/* diseño */
+.box-service-r{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/color-solid-r.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+    margin-bottom: 5%;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+          /* font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+          font-family: 'Aqua Grotesque', "century gothic"; 
+}
+
+.box-img-design{
+    position: absolute;
+    right: 25%;
+    top: 20%; 
+    width: 20%;
+    height: 50vh;
+    box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.box-img-design img{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.box-service-r .box-text-design{
+    float: left;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.box-service-r .box-text-design .box-service-title{
+    color: #fb6d00;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.box-service-r .box-text-design .box-service-description{
+    font-size: 100%;
+}
+
+/* ws */
+.box-img-ws{
+    overflow: hidden;
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    width: 50%;
+    height: 25vh;
+    box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.box-img-ws img{
+    /* width: 100%;
+    height: 100%; */
+   
+}
+
+.box-service-r .box-text-ws{
+    float: left;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.box-service-r .box-text-ws .box-service-title{
+    color: #fb6d00;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.box-service-r .box-text-ws .box-service-description{
+    font-size: 100%;
+}
+
+/* publi */
+.box-service-t{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #201F1F;
+    background-image: url("images/color-solid-r.png");
+    background-repeat:repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 5%;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+          /* font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+          font-family: 'Aqua Grotesque', "century gothic"; 
+}
+.box-service-t .box-text-publi{
+    color: white;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.box-service-t .box-text-publi .box-service-title{
+    color: #fb6d00;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.box-service-t .box-text-publi .box-service-description{
+    font-size: 100%;
+}
+
+.box-img-publi{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    width: 80%;
+    height: 50vh;
+    box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+}
+
+
+.box-img-publi iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------------------------------------------EXHIBIDOR DE PROYECTOS---------------------------------------------------- */
+
+.ex-proyects{
+    
+    background: url("images/Trazado\ 6.png");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+ .borde-estilo{
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    background-image: url("images/motivo-naranja.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+    height: 2vh;
+}
+.ex-proyects .panel-muestra{
+    padding-top: 10%;
+    overflow: hidden;
+}
+
+.ex-proyects .panel-muestra .muestra-img{
+    float: left;
+    width: 50%;
+    height: 50vh;
+    
+}
+
+.ex-proyects .panel-muestra .muestra-img img{
+    height: 100%;   
+    width: 100%;
+}
+
+.ex-proyects .panel-muestra .muestra-datos{
+    position: relative;
+    padding-left: 8%;
+    float: left;
+    width: 50%;
+    height: 50vh;
+}
+
+.ex-proyects .panel-muestra .muestra-datos .titulo{
+    color:#AC6200;
+    font-size: 5vh;
+}
+
+.ex-proyects .panel-muestra .muestra-datos .texto{
+    padding-top: 4%;
+    color:white;
+    font-size: 2.2vh;
+    
+}
+
+.ex-proyects .panel-muestra .muestra-datos .trabajos{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    color:white;
+    font-size: 1.6vh;
+}
+
+.ex-proyects .panel-muestra .muestra-datos .trabajos .logos-works img{
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 6%;
+    width: 50px;
+    font-size: 80%;
+}
+
+.container-other-proyects{
+    margin-top: 6%;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators{
+    padding-top: 5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.next-works{
+    height: 5vh;
+    position: absolute;
+    top: -39px;
+    right: 30%;
+}
+
+.prev-works{
+    height: 5vh;
+    position: absolute;
+    top: -39px;
+    left: 30%;
+}
+
+.carousel-item {
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+}
+
+.carousel-item .card{
+    display: block;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.16);
+    background-color:#201F1F;
+    float: left;
+    margin: 5%;
+    border-radius: 0;
+    border-bottom: 3px solid #AC6200;
+    transition: transform .50s;
+}
+
+.carousel-item .card:hover{
+    transform:scale(1.2) ;
+}
+
+.carousel-item .card img{
+    border-radius: 0;
+}
+.carousel-item .card .logos-works{
+    position: absolute;
+    top: -15%;
+    padding: 2%;
+}
+
+.carousel-item .card .logos-works img{
+    width:30px;
+}
+
+.card-title{
+    text-align: center;
+    width: 100%;
+    color:#AC6200;
+    font-size: 120%;
+}
+
+.card-sub{
+    text-align: center;
+    width: 100%;
+    color:white;
+    font-size: 100%;
+}
+
+.borde-estilo-end{
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    background-image: url("images/motivo-naranja.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+    height: 2vh;
+}
+
+.container-other-proyects .border-trabajos{
+    float: left;
+    margin-top: 10px;
+    width: 35%;
+    height: 2vh;
+    background-image: url("images/motivo-naranja.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+/* -------------------------------------------------------------------------------------TEAM CARPET------------------------ */
+.team-carpet #carouselExampleControlsNoTouching2{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.card-member{
+    display: block;
+    background-color: white;
+    margin: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);;
+    overflow: hidden;
+    width: 30%;
+    height: 15vh;   
+    border-radius: 10px;
+    transition: transform .50s;
+}
+
+.carousel-item .card-member:hover{
+    transform:scale(1.2) ;
+}
+
+.card-member .img-member{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    height: 100%;
+    border-radius: 100%;
+    width: 50%;
+    float: left;
+}
+
+.card-member .img-member img{
+    padding: 2%;
+    height: 100%;
+    width: 60%;
+    border-radius: 50%;
+}
+.card-member .dates-member{
+    margin-top: 5%;
+    width: 50%;
+    float: left;
+}
+.card-member .dates-member .name-member, .card-member .dates-member .ocupation-member{
+    width: 100%;
+}
+
+.card-member .dates-member .name-member{
+    font-weight: bold;
+    font-size: 120%;
+}
+.card-member .dates-member .ocupation-member{
+    font-size: 110%;
+}
+
+.team-carpet{
+    background-image: url("images/Hermod\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card-member .dates-member .social-links{
+    padding-top: 4%;
+}
+.card-member .dates-member .social-links img{
+    width: 30px;
+}
+
+/* --------------------------------------------contact--------------------------------------------- */
+
+
+.contact{
+    overflow: hidden;
+    position: relative;
+    background-color:#201F1F;
+    width: 100%;
+    height: 45vh;
+}
+
+.contact .form-contact, .contact .dates-contact{
+    padding-top: 4%;
+    float: left;
+    height: 100%;
+}
+
+.contact .form-contact{
+    width: 50%;
+}
+.form-contact-title{
+    width: 100%;
+    font-size: 160%;
+    color: #AC6200;
+}
+
+.dates-contact{
+    width: 30%;
+    text-align: center;
+}
+
+#contact-dato{
+    font-size:100% ;
+}
+
+#contact-dato a{
+    color: white;
+    text-decoration: none;
+}
+#contact-title-dato{
+    
+    padding-top: 5% ;
+    color: #9C9C9C;
+    font-size: 120%;
+}
+
+.hermod-logo-contact{
+    padding-left: 4%;
+    float: left;
+    width: 20%;
+    height: 40vh;
+}
+
+
