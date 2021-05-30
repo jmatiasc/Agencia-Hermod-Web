@@ -61,6 +61,7 @@ body{
 /* -------------------------------------------------------NAV-BAR------------------------------------------------------ */
 #logo-nav {
     width: 100px;
+
 }
 
 #nav-bar{
@@ -78,7 +79,7 @@ body{
 
 .items-nav-bar .navbar-nav .nav-link{
     color:#504F4F ;
-    margin-left: 2%;
+    margin-right: 4%;
 }
 
 .items-nav-bar .navbar-nav #separate-item{
@@ -87,6 +88,13 @@ body{
 
 .items-nav-bar .navbar-nav .white{
     color: white;
+}
+
+.navbar-toggler{
+    background-image: url('images/TOGGLE.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fb6d05;
 }
 /* --------------------------------------------------PORTADA--------------------------------------------------------------- */
 .contenedor-portada{
@@ -197,18 +205,19 @@ body{
 }
 
 .box-service .box-text-photo {
+    width: 50%;
     float: right;
-    margin-top: 30%;
-    margin-right: 10%;
+    margin-top: 10%;
+    margin-right: 2%;
 }
 .box-service .box-text-photo .box-service-title{
     color:#fb6d00;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 4vh;
 }
 
 .box-service .box-text-photo .box-service-description{
-    font-size: 100%;
+    font-size: 2vh;
 }
 
 
@@ -231,17 +240,18 @@ body{
 
 .box-service .box-text-brand{
     float: right;
-    margin-top: 30%;
-    margin-right: 10%;
+    margin-top: 20%;
+    margin-right: 30%;
 }
 .box-service .box-text-brand .box-service-title{
+    width: 40%;
     color: #fb6d00;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 3vh;
 }
 
 .box-service .box-text-brand .box-service-description{
-    font-size: 100%;
+    font-size: 2vh;
 }
 
 /* diseño */
@@ -274,12 +284,17 @@ body{
 
 }
 
-.box-img-design img{
-    /* width: 100%;
-    height: 100%; */
+.box-img-design img,
+.box-img-photo img,
+.box-img-brand img,
+.box-img-ws img
+{
+     width: 100%;
+    height: 100%; 
 }
 
 .box-service-r .box-text-design{
+    width: 50%;
     float: left;
     margin-top: 15%;
     margin-left: 10%;
@@ -287,11 +302,11 @@ body{
 .box-service-r .box-text-design .box-service-title{
     color: #fb6d00;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 3vh;
 }
 
 .box-service-r .box-text-design .box-service-description{
-    font-size: 100%;
+    font-size: 2vh;
 }
 
 /* ws */
@@ -315,17 +330,17 @@ body{
 
 .box-service-r .box-text-ws{
     float: left;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 10%;
 }
 .box-service-r .box-text-ws .box-service-title{
     color: #fb6d00;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 3vh;
 }
 
 .box-service-r .box-text-ws .box-service-description{
-    font-size: 100%;
+    font-size: 2vh;
 }
 
 /* publi */
@@ -355,11 +370,11 @@ body{
 .box-service-t .box-text-publi .box-service-title{
     color: #fb6d00;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 3vh;
 }
 
 .box-service-t .box-text-publi .box-service-description{
-    font-size: 100%;
+    font-size: 2vh;
 }
 
 .box-img-publi{
@@ -400,6 +415,8 @@ body{
     height: 2vh;
 }
 .ex-proyects .panel-muestra{
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 10%;
     overflow: hidden;
 }
@@ -448,8 +465,8 @@ body{
     border-radius: 50%;
     background-color: white;
     margin-right: 6%;
-    width: 50px;
-    font-size: 80%;
+    width: 6vh;
+    font-size: 2vh;
 }
 
 .container-other-proyects{
@@ -464,17 +481,18 @@ body{
     width: 100%;
 }
 
+
 .next-works{
     height: 5vh;
     position: absolute;
-    top: -39px;
+    top: -13%;
     right: 30%;
 }
 
 .prev-works{
     height: 5vh;
     position: absolute;
-    top: -39px;
+    top: -13%;
     left: 30%;
 }
 
@@ -489,7 +507,10 @@ body{
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.16);
     background-color:#201F1F;
     float: left;
-    margin:4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10vh;
+    margin-bottom: 2%;
     border-radius: 0;
     border-bottom: 3px solid #AC6200;
     transition: transform .50s;
@@ -510,28 +531,28 @@ body{
 }
 
 .carousel-item .card .logos-works img{
-    width:30px;
+    width:3vh;
 }
 
 .card-title{
     text-align: center;
     width: 100%;
     color:#AC6200;
-    font-size: 120%;
+    font-size: 2.5vh;
 }
 
 .card-sub{
     text-align: center;
     width: 100%;
     color:white;
-    font-size: 100%;
+    font-size: 1.7vh;
 }
 
 .nuestros-trabajos{
     float:left;
      width:30%;
      color: #D9D2D2;
-      font-size: 150%;
+      font-size: 3.5vh;
 }
 
 .borde-estilo-end{
@@ -606,10 +627,10 @@ body{
 
 .card-member .dates-member .name-member{
     font-weight: bold;
-    font-size: 120%;
+    font-size: 2.2vh;
 }
 .card-member .dates-member .ocupation-member{
-    font-size: 110%;
+    font-size: 2vh;
 }
 
 .team-carpet{
@@ -623,7 +644,7 @@ body{
     padding-top: 4%;
 }
 .card-member .dates-member .social-links img{
-    width: 30px;
+    width: 3vh;
 }
 
 /* --------------------------------------------contact--------------------------------------------- */
@@ -634,7 +655,7 @@ body{
     position: relative;
     background-color:#201F1F;
     width: 100%;
-    height: 45vh;
+    height: 55vh;
 }
 
 .contact .form-contact, .contact .dates-contact{
@@ -648,7 +669,7 @@ body{
 }
 .form-contact-title{
     width: 100%;
-    font-size: 160%;
+    font-size: 4vh;
     color: #AC6200;
 }
 
@@ -658,7 +679,7 @@ body{
 }
 
 #contact-dato{
-    font-size:100% ;
+    font-size:2.5vh ;
 }
 
 #contact-dato a{
@@ -669,7 +690,7 @@ body{
     
     padding-top: 5% ;
     color: #9C9C9C;
-    font-size: 120%;
+    font-size: 3vh;
 }
 
 .hermod-logo-contact{
@@ -1034,54 +1055,473 @@ body{
 
     
 
-.contact{
-    overflow: hidden;
-    position: relative;
-    background-color:#201F1F;
-    width: 100%;
-    height: 150vh;
-}
+    .contact{
+        overflow: hidden;
+        position: relative;
+        background-color:#201F1F;
+        width: 100%;
+        height: 150vh;
+    }
 
-.contact .form-contact, .contact .dates-contact{
-    padding-top: 15%;
-     float: left; 
-    height: 100%;
-}
+    .contact .form-contact, .contact .dates-contact{
+        padding-top: 15%;
+        float: left; 
+        height: 100%;
+    }
 
-.contact .form-contact{
-     width: 100%; 
-}
-.form-contact-title{
-    width: 100%;
-    font-size: 120%;
-    color: #AC6200;
-}
+    .contact .form-contact{
+        width: 100%; 
+    }
+    .form-contact-title{
+        width: 100%;
+        font-size: 120%;
+        color: #AC6200;
+    }
 
-.dates-contact{
-     width: 100%; 
-    text-align: center;
-}
+    .dates-contact{
+        width: 100%; 
+        text-align: center;
+    }
 
-#contact-dato{
-    font-size:100% ;
-}
+    #contact-dato{
+        font-size:100% ;
+    }
 
-#contact-dato a{
-    color: white;
-    text-decoration: none;
-}
-#contact-title-dato{
+    #contact-dato a{
+        color: white;
+        text-decoration: none;
+    }
+    #contact-title-dato{
+        
+        padding-top: 5% ;
+        color: #9C9C9C;
+        font-size: 120%;
+    }
+
+    .hermod-logo-contact{
+        padding-left: 4%;
+        float: left;
+        width: 20%;
+        height: 40vh;
+    }
     
-    padding-top: 5% ;
-    color: #9C9C9C;
-    font-size: 120%;
 }
 
-.hermod-logo-contact{
-    padding-left: 4%;
-    float: left;
-    width: 20%;
-    height: 40vh;
+
+
+
+/*------------------------mobile horizontal-------*/
+
+
+@media (min-width:451px) and (max-width:768px){
+    
+    .servicios-bar .nav-item .nav-link{
+        
+        color: #707070;
+        font-weight:lighter;
+        font-size: 1.7vh; 
+    }
+
+    .servicios-bar .nav-item .nav-link img{
+        width: 10vh;
+    }
+
+                     /*------- BOX OF SERVICE------- */
+    .box-service ,.box-service-t {
+        position: relative;
+        width: 100%;
+        height: 120vh;
+        background-image: url("images/color-solid.png");
+        background-size:350%;
+        background-position:auto;
+        background-repeat:repeat;
+        overflow: hidden;
+        margin-bottom: 5%;
+
+    }
+
+
+    .box-service-r{
+        background-image: url("images/color-solid-r.png");
+        background-size:350%;
+        overflow: hidden;
+        margin-bottom: 5%;
+        height: 120vh;
+ 
+    }
+
+    .box-img-photo,
+    .box-img-brand {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        width: 90%;
+        height: 50vh;
+        box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    
+    }
+
+    .box-img-design{
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        top: 50%;
+        width: 90%;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .box-img-ws,
+    .box-img-publi
+     {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 90%;
+        height: 50vh;
+        overflow: hidden;
+    
+    }
+
+    .box-img-photo img,
+    .box-img-brand img,
+    .box-img-design img,
+    .box-img-ws img,
+    .box-img-publi iframe
+    {
+         width: 100%;
+        height: 100%; 
+    }
+    
+    .box-service .box-text-photo,
+    .box-service .box-text-brand,
+    .box-service-r .box-text-design,
+    .box-service-r .box-text-ws,
+    .box-service-t .box-text-publi
+     {
+        float: right;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .box-service .box-text-ws .box-service-title,
+    .box-service .box-text-brand .box-service-title{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .box-service .box-text-photo .box-service-description,
+    .box-service .box-text-brand .box-service-description,
+    .box-service-r .box-text-design .box-service-description,
+    .box-service-r .box-text-ws .box-service-description,
+    .box-service-t .box-text-publi .box-service-description
+    {   text-align: center;
+        font-size: 100%;
+        color: white;
+    }
+
+
+    .box-service-r .box-text-ws{
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+    }
+  
+    .box-img-publi iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*---------ex-servicios-------*/
+    .ex-proyects .panel-muestra .muestra-datos .trabajos .logos-works img{
+        width: 10%;
+    }
+    .container-other-proyects{
+        overflow: visible;
+    }
+    .nuestros-trabajos {
+        text-align: center;
+        float: left;
+        width: 30%;
+        color: #D9D2D2;
+        font-size: 3.5vh;
+    }
+    
+    .next-works{
+        height: 5vh;
+        position: absolute;
+        top: -3.5%;
+        right: 30%;
+    }
+    
+    .prev-works{
+        height: 5vh;
+        position: absolute;
+        top: -3.5%;
+        left: 30%;
+    }
+    
+    
+
+    .contact{
+        height: 90vh;
+    }
 }
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .servicios-bar .nav-item .nav-link{
+        
+        color: #707070;
+        font-weight:lighter;
+        font-size: 1vh; 
+    }
+
+    .servicios-bar .nav-item .nav-link img{
+        width: 5vh;
+    }
+
+                     /*------- BOX OF SERVICE------- */
+    .box-service ,.box-service-t {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-image: url("images/color-solid.png");
+        background-size:350%;
+        background-position:auto;
+        background-repeat:repeat;
+        overflow: hidden;
+        margin-bottom: 5%;
+
+    }
+
+
+    .box-service-r{
+        background-image: url("images/color-solid-r.png");
+        background-size:350%;
+        overflow: hidden;
+        margin-bottom: 5%;
+        height: 80vh;
+ 
+    }
+
+    .box-img-photo,
+    .box-img-brand {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        width: 90%;
+        height: 50vh;
+        box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    
+    }
+
+    .box-img-design{
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        top: 50%;
+        width: 90%;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .box-img-ws,
+    .box-img-publi
+     {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 90%;
+        height: 50vh;
+        overflow: hidden;
+    
+    }
+
+    .box-img-photo img,
+    .box-img-brand img,
+    .box-img-design img,
+    .box-img-ws img,
+    .box-img-publi iframe
+    {
+         width: 100%;
+        height: 100%; 
+    }
+    
+    .box-service .box-text-photo,
+    .box-service .box-text-brand,
+    .box-service-r .box-text-design,
+    .box-service-r .box-text-ws,
+    .box-service-t .box-text-publi
+     {
+        float: right;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .box-service .box-text-ws .box-service-title,
+    .box-service .box-text-brand .box-service-title{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .box-service .box-text-photo .box-service-description,
+    .box-service .box-text-brand .box-service-description,
+    .box-service-r .box-text-design .box-service-description,
+    .box-service-r .box-text-ws .box-service-description,
+    .box-service-t .box-text-publi .box-service-description
+    {   text-align: center;
+        font-size: 100%;
+        color: white;
+    }
+
+
+    .box-service-r .box-text-ws{
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+    }
+  
+    .box-img-publi iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*---------ex-servicios-------*/
+    .ex-proyects .panel-muestra .muestra-datos .trabajos .logos-works img{
+        width: 10%;
+    }
+    .container-other-proyects{
+        overflow: visible;
+    }
+
+    .ex-proyects .panel-muestra .muestra-datos .titulo {
+        font-size: 4vh;
+    }
+
+    .ex-proyects .panel-muestra .muestra-datos .texto{
+        font-size: 2vh;
+    }
+
+    .nuestros-trabajos {
+        text-align: center;
+        float: left;
+        width: 30%;
+        color: #D9D2D2;
+        font-size: 3.5vh;
+    }
+    
+    .next-works{
+        height: 5vh;
+        position: absolute;
+        top: -3.5%;
+        right: 30%;
+    }
+    
+    .prev-works{
+        height: 5vh;
+        position: absolute;
+        top: -3.5%;
+        left: 30%;
+    }
+
+    /* ------------------------------team carpet.-------------------------- */
+
+    .team-carpet #carouselExampleControlsNoTouching2{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+    
+    .card-member{
+        display: block;
+        background-color: white;
+        margin: 5%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);;
+        overflow: hidden;
+         width: 40%; 
+        height: 10vh;   
+        border-radius: 10px;
+        transition: transform .50s;
+    }
+    
+    .carousel-item .card-member:hover{
+        transform:scale(1.2) ;
+    }
+    
+    .card-member .img-member{
+        padding-left: 10%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        height: 100%;
+        border-radius: 100%;
+        width: 50%;
+        float: left;
+    }
+    
+    .card-member .img-member img{
+        padding: 2%;
+        height: 100%;
+        width: 83%;
+        border-radius: 50%;
+    }
+
+
+    .card-member .dates-member .name-member, .card-member .dates-member .ocupation-member{
+        width: 100%;
+    }
+    
+    .card-member .dates-member .name-member{
+        font-weight: bold;
+        font-size: 1vh;
+    }
+    .card-member .dates-member .ocupation-member{
+        font-size: 1vh;
+    }
+    
+
+  
+
+
+
+    /* -----------------------------------contacto--------------------------------------------- */
+    
+    
+
+    .contact{
+        height: 110vh;
+    }
+
+
+
+    .contact .form-contact, .contact .dates-contact{
+        padding-top: 15%;
+        float: left; 
+        height: 100%;
+    }
+
+    .contact .form-contact{
+        width: 100%; 
+    }
+
+
+    .dates-contact{
+        width: 100%; 
+        text-align: center;
+    }
+
+
+
    
+
 }
