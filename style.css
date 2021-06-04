@@ -48,7 +48,7 @@
     font-family: 'Aqua Grotesque';
     font-style: normal;
     font-weight: normal;
-    src: url('aqua.ttf')format("TrueType");     
+    src: url('/aqua.ttf')format("TrueType");     
     }
 
 body{
@@ -60,73 +60,73 @@ body{
 
 /* -------------------------------------------------------NAV-BAR------------------------------------------------------ */
 #logo-nav {
-    width: 100px;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 120px;
 
 }
 
 #nav-bar{
-    
+    margin-right: 4%;
     z-index: 11;
     position: absolute;
     top: 1;
     width: 100%;
-    font-size: 130%;
+    font-size: 2vh;
 }
 
 .items-nav-bar .navbar-nav{
-    width: 55%;
+    width: 50%;
 }
 
 .items-nav-bar .navbar-nav .nav-link{
+    text-align: center;
     color:#504F4F ;
     margin-right: 4%;
 }
 
-.items-nav-bar .navbar-nav #separate-item{
-    width: 8%;
-}
 
 .items-nav-bar .navbar-nav .white{
     color: white;
 }
 
 .navbar-toggler{
-    background-image: url('images/TOGGLE.png');
+    background-image: url('images/toggle-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #fb6d05;
 }
 /* --------------------------------------------------PORTADA--------------------------------------------------------------- */
 .contenedor-portada{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 .portada{
     overflow: hidden;
     z-index: 10;
     position: relative;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 }
 
 .portada #portada-img{
-    height: 85vh;
-    width: 32%;
+    height: 90vh;
+    width:27.5%;
     position: absolute;
     right: 1px;
 }
 
-.portada #portada-img {
-    height: 85vh;
+
+.portada .carousel-item{
+    padding: 0%;
 }
  
 .portada #portada-palabras-img{
     transition: transform .70s;
     position: absolute;
     width: 65%;
-    bottom: 25%;
+    bottom: 40%;
     left: 19.7%;
 }
 
@@ -139,12 +139,23 @@ body{
     font-size: 2.5vh;
     letter-spacing: 0.5em;
     position: absolute;
-    bottom:15%;
+    bottom:30%;
     left: 19.7%;
 }
 /* ---------------------------------------------------------------SERVICIOS------------------------------------------------------------ */
 .servicios-bar{
-    margin-top: 4%;
+    position: relative;
+    height: 90vh;
+}
+
+.items-bar-service{
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
+    position:absolute;
+    height:23vh;
+    top: -15%;
+  
 }
 
 .servicios-bar .nav-item .nav-link img{
@@ -152,19 +163,58 @@ body{
 }
 
 .servicios-bar .nav-item{
-    margin-right: 8%;
+    width: 100%;
+    flex-wrap:unset;
+    
+    
+}
+
+
+
+.servicios-bar .nav{
+    padding-right: 20%;
+    padding-left: 20%;
+    display: block;
+    flex-wrap: nowrap;
 }
 
 .servicios-bar .nav-item .nav-link{
-    color: #707070;
+    margin-top: 6%;
+    height:20vh;
+    border-radius: 0px;
+    width: 100%;
+    color: #504F4F;
     font-weight:lighter;
+    background-color: rgba(230,230,230,0.99);
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
 }
+
+.servicios-bar .nav-item .punta-izq{
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.servicios-bar .nav-item .punta-der{
+    border-radius: 0px 10px 10px 0px;
+   
+}
+
+.servicios-bar .nav-item .nav-link .service-name{
+    padding-top: 15%;
+}
+
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    z-index: 100;
+    margin-top: 0%;
+    border-radius: 5%;
+    height:22vh;
+    width: 100%;
     background-color: #fb6d00;
     color: white;
     box-shadow:
-    inset 0 -3em 3em rgba(0,0,0,0.0),
-          0 0  0 2px #fb6d05,
+    inset 1 -3em 3em rgba(0,0,0,0.0),
+          1 -3em 3e 2px #fb6d05,
           0.3em 0.3em 1em rgba(0,0,0,0.5);
 } 
 
@@ -174,7 +224,8 @@ body{
 .box-service {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
+    background-color: #201F1F;
     background-image: url("images/color-solid.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,15 +250,12 @@ body{
 
 }
 
-.box-img-photo img{
-    /* width: 100%;
-    height: 100%; */
-}
+
 
 .box-service .box-text-photo {
     width: 50%;
     float: right;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-right: 2%;
 }
 .box-service .box-text-photo .box-service-title{
@@ -218,6 +266,7 @@ body{
 
 .box-service .box-text-photo .box-service-description{
     font-size: 2vh;
+    color: white;
 }
 
 
@@ -225,7 +274,7 @@ body{
 .box-img-brand{
     position: absolute;
     left: 20%;
-    top: 5%;
+    top: 15%;
     width: 50%;
     height: 25vh;
     box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
@@ -233,14 +282,10 @@ body{
 
 }
 
-.box-img-brand img{
-    /* width: 100%;
-    height: 100%; */
-}
 
 .box-service .box-text-brand{
     float: right;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-right: 30%;
 }
 .box-service .box-text-brand .box-service-title{
@@ -252,14 +297,16 @@ body{
 
 .box-service .box-text-brand .box-service-description{
     font-size: 2vh;
+    color: white;
 }
 
 /* diseño */
 .box-service-r{
     position: relative;
     width: 100%;
-    height: 80vh;
-    background-image: url("images/color-solid-r.png");
+    height: 90vh;
+    background-color: #201F1F;
+    background-image: url('images/color-solid-r.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -307,6 +354,7 @@ body{
 
 .box-service-r .box-text-design .box-service-description{
     font-size: 2vh;
+    color: white;
 }
 
 /* ws */
@@ -322,11 +370,7 @@ body{
 
 }
 
-.box-img-ws img{
-    /* width: 100%;
-    height: 100%; */
-   
-}
+
 
 .box-service-r .box-text-ws{
     float: left;
@@ -341,13 +385,14 @@ body{
 
 .box-service-r .box-text-ws .box-service-description{
     font-size: 2vh;
+    color: white;
 }
 
 /* publi */
 .box-service-t{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: #201F1F;
     background-image: url("images/color-solid-r.png");
     background-repeat:repeat;
@@ -364,7 +409,7 @@ body{
 .box-service-t .box-text-publi{
     color: white;
     float: left;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 10%;
 }
 .box-service-t .box-text-publi .box-service-title{
@@ -375,13 +420,14 @@ body{
 
 .box-service-t .box-text-publi .box-service-description{
     font-size: 2vh;
+    color: white;
 }
 
 .box-img-publi{
     position: absolute;
     left: 5%;
     bottom: 5%;
-    width: 80%;
+    width: 60%;
     height: 50vh;
     box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
 }
@@ -417,11 +463,15 @@ body{
 .ex-proyects .panel-muestra{
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 10%;
+    padding-top: 5%;
     overflow: hidden;
 }
 
 .ex-proyects .panel-muestra .muestra-img{
+    box-shadow:
+    inset 0 -3em 3em rgba(10,10,10,0.1),
+          0 0  0 2px rgba(10,10,10,0.1),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
     float: left;
     width: 50%;
     height: 50vh;
@@ -503,13 +553,16 @@ body{
 }
 
 .carousel-item .card{
+    overflow: hidden;
     display: block;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.16);
     background-color:#201F1F;
     float: left;
+    padding-left: 0%;
+    padding-right: 0%;
     margin-left: 4%;
     margin-right: 4%;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 2%;
     border-radius: 0;
     border-bottom: 3px solid #AC6200;
@@ -524,10 +577,40 @@ body{
     width: 100%;
     border-radius: 0;
 }
+
+
+
 .carousel-item .card .logos-works{
+    width: 100%;
     position: absolute;
-    top: -15%;
-    padding: 2%;
+    overflow: hidden;
+    top: -20%;
+    padding: 0%;
+    animation: upJobs 0.5s 1;
+} 
+    
+@keyframes upJobs {
+    0%{top: -0%;}
+}
+
+.carousel-item .card .logos-works.active{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: -1%;
+    padding: 0%;
+    animation: downJobs 0.5s 1;
+} 
+    
+@keyframes downJobs {
+    0%{top: -20%;}
+}
+
+.carousel-item .card .logos-works .item{
+    float: left;
+    background-color: #fb6d05;
+    margin-right: 2%;
+    border-radius: 0 0 20% 20%;
 }
 
 .carousel-item .card .logos-works img{
@@ -578,6 +661,10 @@ body{
 }
 
 /* -------------------------------------------------------------------------------------TEAM CARPET------------------------ */
+
+.team-carpet {
+    height: 70vh;
+}
 .team-carpet #carouselExampleControlsNoTouching2{
     padding-left: 5%;
     padding-right: 5%;
@@ -590,7 +677,7 @@ body{
     margin: 5%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);;
     overflow: hidden;
-     width: 30%; 
+    width: 30%; 
     height: 15vh;   
     border-radius: 10px;
     transition: transform .50s;
@@ -634,9 +721,9 @@ body{
 }
 
 .team-carpet{
-    background-image: url("images/Hermod\ 1.png");
-    background-repeat: no-repeat;
+    background-image: url("images/hermod\ 2.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -651,64 +738,100 @@ body{
 
 
 .contact{
-    overflow: hidden;
-    position: relative;
     background-color:#201F1F;
-    width: 100%;
-    height: 55vh;
+    position: relative;
+    height: 14vh;
+    overflow: hidden;
 }
 
-.contact .form-contact, .contact .dates-contact{
-    padding-top: 4%;
-    float: left;
-    height: 100%;
+.contact .contenedor-obj{
+    padding: 2vh;
 }
 
-.contact .form-contact{
-    width: 50%;
-}
-.form-contact-title{
-    width: 100%;
-    font-size: 4vh;
-    color: #AC6200;
+.contact .contenedor-obj .link-contact{
+    padding-right:1% ;
+    padding-left: 1%;
 }
 
-.dates-contact{
-    width: 30%;
-    text-align: center;
-}
+    /*-------------------------------------------------------PAGINA DE CONTACTOS--------------------------------*/
 
-#contact-dato{
-    font-size:2.5vh ;
-}
 
-#contact-dato a{
-    color: white;
-    text-decoration: none;
-}
-#contact-title-dato{
-    
-    padding-top: 5% ;
-    color: #9C9C9C;
-    font-size: 3vh;
-}
+    .portada-contacto{
+        position: relative;
+        width: 100%;
+        height: 65vh;
+        overflow: hidden;
+    }
 
-.hermod-logo-contact{
-    padding-left: 4%;
-    float: left;
-    width: 20%;
-    height: 40vh;
-}
+    .portada-contacto img{
+        opacity: 0.3;
+        width: 100%;
+        height: 100vh;
+    } 
+
+    .panel-contacto{
+        position: absolute;
+        bottom: -5%;
+        width: 60%;
+        background-color: white;
+        height: 60vh;
+        margin-left: 20%;
+        margin-right: 20%;
+         box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(255,255,255),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+    }
+
+    .panel-contacto .formulario,.panel-contacto .datos-de-contacto{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .panel-contacto .formulario{
+        position: relative;
+        padding: 5%;
+    }
+
+    .panel-contacto .datos-de-contacto{
+        padding: 5%;
+        color: #D9D2D2;
+        overflow: hidden;
+        position: relative;
+        background-color: #363535;
+        background-image: url('images/hermod-logo-opacity-black.png');
+        
+    }
+
+    .blanko{
+        height: 70vh;
+        z-index:200;
+    }
+
 /* -------------------------vista mobile vertical--------------------- */
 
 @media (max-width:450px)  {
+
+    #logo-nav {
+        position: absolute;
+        top:1px;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 120px;
+    
+    }
+
+
+ 
     .portada #portada-img{
         display: none;
     }
 
     .portada #portada-palabras-img{
         width: 65%;
-        bottom: 30%;
+        bottom: 45%;
         left: 19.7%;
     }
 
@@ -718,7 +841,6 @@ body{
     }
     
     #nav-bar{
-        background-color: rgba(251,147,0, 0.7);
         z-index: 11;
         position: absolute;
         top: 1;
@@ -727,7 +849,7 @@ body{
     }
 
     .navbar-toggler{
-        background-image: url('images/TOGGLE.png');
+        background-image: url('images/toggle-icon.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -765,9 +887,16 @@ body{
     }
     
     .servicios-bar .nav-item .nav-link{
+        height: 14vh;
         color: #707070;
         font-weight:lighter;
     }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   
+        height:16vh;
+
+    } 
 
     .service-name{
         font-size: 39%;
@@ -776,7 +905,7 @@ body{
     .box-service ,.box-service-t {
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         background-image: url("images/color-solid.png");
         background-repeat:repeat;
         background-size:auto;
@@ -793,6 +922,7 @@ body{
 
 
     .box-service-r{
+        height: 100vh;
         background-image: url("images/color-solid-r.png");
         background-repeat:repeat;
         background-size: auto;
@@ -811,7 +941,7 @@ body{
     .box-img-brand {
         position: absolute;
         left: 5%;
-        top: 50%;
+        top: 60%;
         width: 90%;
         height: 35vh;
         box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
@@ -823,7 +953,7 @@ body{
         position: absolute;
         bottom: 0%;
         right: 5%;
-        top: 50%;
+        top: 60%;
         width: 90%;
         height: 35vh;
         box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
@@ -835,9 +965,9 @@ body{
      {
         position: absolute;
         left: 5%;
-        bottom: 5%;
+        bottom: 4%;
         width: 90%;
-        height: 35vh;
+        height: 45vh;
         box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
         overflow: hidden;
     
@@ -862,7 +992,7 @@ body{
         float: right;
         width: 100%;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 20%;
         margin-right: 0%;
         margin-left: 0%;
     }
@@ -879,7 +1009,7 @@ body{
 
 
     .box-service-r .box-text-ws{
-        margin-top: 5%;
+        margin-top: 20%;
         margin-left: 0%;
         text-align: center;
     }
@@ -1018,14 +1148,6 @@ body{
     
     .container-other-proyects .border-trabajos{
         display: none;
-        /* float: left;
-        margin-top: 10px;
-        width: 20%;
-        height: 2vh;
-        background-image: url("images/motivo-naranja.png");
-        background-repeat: repeat;
-        background-position: top;
-        background-size: contain; */
     }
     
 
@@ -1036,11 +1158,6 @@ body{
         
     }
 
-    /* .card-member .dates-member{
-        margin-top: 5%;
-        width: 50%;
-        float: left;
-    } */
 
     .card-member .dates-member .name-member, .card-member .dates-member .ocupation-member{
         width: 100%;
@@ -1060,51 +1177,63 @@ body{
         position: relative;
         background-color:#201F1F;
         width: 100%;
-        height: 150vh;
     }
 
-    .contact .form-contact, .contact .dates-contact{
-        padding-top: 15%;
-        float: left; 
-        height: 100%;
-    }
 
-    .contact .form-contact{
-        width: 100%; 
-    }
-    .form-contact-title{
-        width: 100%;
-        font-size: 120%;
-        color: #AC6200;
-    }
+        /*-------------------------------------------------------PAGINA DE CONTACTOS--------------------------------*/
 
-    .dates-contact{
-        width: 100%; 
-        text-align: center;
-    }
 
-    #contact-dato{
-        font-size:100% ;
-    }
-
-    #contact-dato a{
-        color: white;
-        text-decoration: none;
-    }
-    #contact-title-dato{
-        
-        padding-top: 5% ;
-        color: #9C9C9C;
-        font-size: 120%;
-    }
-
-    .hermod-logo-contact{
-        padding-left: 4%;
-        float: left;
-        width: 20%;
-        height: 40vh;
-    }
+        .portada-contacto{
+            position: relative;
+            width: 100%;
+            height: 65vh;
+            overflow: hidden;
+        }
     
+        .portada-contacto img{
+            opacity: 0.3;
+            width: 100%;
+            height: 100vh;
+        } 
+    
+        .panel-contacto{
+            position: absolute;
+            bottom: 5%;
+            width: 80%;
+            background-color: white;
+            height: 60vh;
+            margin-left: 10%;
+            margin-right: 10%;
+             box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.1),
+                  0 0  0 2px rgb(255,255,255),
+                  0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+        }
+    
+        .panel-contacto .formulario,.panel-contacto .datos-de-contacto{
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .panel-contacto .formulario{
+            position: relative;
+            padding: 5%;
+        }
+    
+        .panel-contacto .datos-de-contacto{
+            height: 40vh;
+            padding: 5%;
+            color: #D9D2D2;
+            overflow: hidden;
+            position: relative;
+            background-color: #363535;
+            background-image: url('images/hermod-logo-opacity-black.png');
+            
+        }
+
+
 }
 
 
@@ -1114,7 +1243,26 @@ body{
 
 
 @media (min-width:451px) and (max-width:768px){
+    #logo-nav {
+        position: absolute;
+        top:-14%;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 70px;
     
+    }
+
+
+    #nav-bar{
+        background-color: white;
+        z-index: 11;
+        position: absolute;
+        top: 1;
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+
     .servicios-bar .nav-item .nav-link{
         
         color: #707070;
@@ -1125,6 +1273,13 @@ body{
     .servicios-bar .nav-item .nav-link img{
         width: 10vh;
     }
+
+    .items-nav-bar .navbar-nav .nav-link,.items-nav-bar .navbar-nav .white{
+        color:#504F4F ;
+        margin-left: 2%;
+
+    }
+    
 
                      /*------- BOX OF SERVICE------- */
     .box-service ,.box-service-t {
@@ -1153,9 +1308,9 @@ body{
     .box-img-photo,
     .box-img-brand {
         position: absolute;
-        left: 5%;
+        left: 25%;
         top: 50%;
-        width: 90%;
+        width: 50%;
         height: 50vh;
         box-shadow:10px 12px 12px 11px rgba(0, 0, 0, 0.2);
         overflow: hidden;
@@ -1165,9 +1320,9 @@ body{
     .box-img-design{
         position: absolute;
         bottom: 0%;
-        right: 5%;
+        right: 25%;
         top: 50%;
-        width: 90%;
+        width: 50%;
         height: 50vh;
         overflow: hidden;
     }
@@ -1176,9 +1331,9 @@ body{
     .box-img-publi
      {
         position: absolute;
-        left: 5%;
-        bottom: 5%;
-        width: 90%;
+        bottom: 15%;
+        left: 25%;
+        width: 50%;
         height: 50vh;
         overflow: hidden;
     
@@ -1203,7 +1358,7 @@ body{
         float: right;
         width: 100%;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 10%;
         margin-right: 0%;
         margin-left: 0%;
     }
@@ -1269,12 +1424,103 @@ body{
     
 
     .contact{
-        height: 90vh;
+        background-color:#201F1F;
+        position: relative;
+        height: 30vh;
+        overflow: hidden;
     }
+
+            /*-------------------------------------------------------PAGINA DE CONTACTOS--------------------------------*/
+
+
+            .portada-contacto{
+                display: none;
+                position: relative;
+                width: 100%;
+                height: 65vh;
+                overflow: hidden;
+            }
+        
+            .portada-contacto img{
+                opacity: 0.3;
+                width: 100%;
+                height: 100vh;
+            } 
+        
+            .panel-contacto{
+                padding-top: 10%;
+                position: relative;
+                bottom: 0%;
+                width: 100%;
+                background-color: white;
+                height: 100vh;
+                margin-left: 0%;
+                margin-right: 0%;
+                 box-shadow:
+                inset 0 -3em 3em rgba(0,0,0,0.1),
+                      0 0  0 2px rgb(255,255,255),
+                      0.3em 0.3em 1em rgba(0,0,0,0.3);
+        
+            }
+
+            .blanko{
+                display: none;
+                height: 70vh;
+                z-index:200;
+            }
+        
+            .panel-contacto .formulario,.panel-contacto .datos-de-contacto{
+                float: left;
+                width: 100%;
+                height: 100%;
+            }
+        
+            .panel-contacto .formulario{
+                position: relative;
+                padding: 5%;
+            }
+        
+            .panel-contacto .datos-de-contacto{
+                height: 80vh;
+                padding: 5%;
+                color: #D9D2D2;
+                overflow: hidden;
+                position: relative;
+                background-color: #363535;
+                background-image: url('images/hermod-logo-opacity-black.png');
+                
+            }
 }
 
 
 @media (min-width:768px) and (max-width:1024px){
+
+    #logo-nav {
+        position: absolute;
+        top:-14%;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 70px;
+    
+    }
+
+
+    #nav-bar{
+        background-color: white;
+        z-index: 11;
+        position: absolute;
+        top: 1;
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+    .items-nav-bar .navbar-nav .nav-link,.items-nav-bar .navbar-nav .white{
+        color:#504F4F ;
+        margin-left: 2%;
+
+    }
+    
+
     .servicios-bar .nav-item .nav-link{
         
         color: #707070;
@@ -1328,7 +1574,7 @@ body{
         right: 5%;
         top: 50%;
         width: 90%;
-        height: 50vh;
+        height: 40vh;
         overflow: hidden;
     }
 
@@ -1339,7 +1585,7 @@ body{
         left: 5%;
         bottom: 5%;
         width: 90%;
-        height: 50vh;
+        height: 40vh;
         overflow: hidden;
     
     }
@@ -1363,7 +1609,7 @@ body{
         float: right;
         width: 100%;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 12%;
         margin-right: 0%;
         margin-left: 0%;
     }
@@ -1386,7 +1632,7 @@ body{
 
 
     .box-service-r .box-text-ws{
-        margin-top: 5%;
+        margin-top: 12%;
         margin-left: 0%;
         text-align: center;
     }
@@ -1450,7 +1696,7 @@ body{
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);;
         overflow: hidden;
          width: 40%; 
-        height: 10vh;   
+        height: 18vh;   
         border-radius: 10px;
         transition: transform .50s;
     }
@@ -1499,29 +1745,41 @@ body{
     
 
     .contact{
-        height: 110vh;
+        background-color:#201F1F;
+        position: relative;
+        height: 30vh;
+        overflow: hidden;
     }
 
 
-
-    .contact .form-contact, .contact .dates-contact{
-        padding-top: 15%;
-        float: left; 
-        height: 100%;
-    }
-
-    .contact .form-contact{
-        width: 100%; 
-    }
-
-
-    .dates-contact{
-        width: 100%; 
-        text-align: center;
-    }
 
 
 
    
 
 }
+
+    /* -------------------------------M14---WEB---DESIGN------------------------------------ */
+    footer{
+        font-size: 1.5vh;
+        width: 100%;
+        padding: 10px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgba(30,30,30,1);
+        
+    }
+    
+    .logo-m14{
+        color:  rgba(70,70,70,1);
+    }
+    
+    .logo-m14 span{
+        padding: 1%;
+    }
+    
+    .logo-m14 img{
+        padding: 0%;
+        width: 7%;
+    } 
+
+
